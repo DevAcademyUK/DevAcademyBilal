@@ -129,7 +129,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.rockPaperScissors">
-    <configuration name="DuckSongs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="DuckSongs" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DataTypes.DuckSongs" />
       <module name="First Program" />
       <extension name="coverage">
@@ -183,7 +183,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DuckSongs" />
         <item itemvalue="Application.singsong" />
         <item itemvalue="Application.HelloProgram" />
       </list>
@@ -203,17 +202,17 @@
       <workItem from="1552987956086" duration="9464000" />
       <workItem from="1553007728784" duration="2346000" />
       <workItem from="1553033272879" duration="1089000" />
-      <workItem from="1553034489484" duration="490000" />
+      <workItem from="1553034489484" duration="1070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17713000" />
+    <option name="totallyTimeSpent" value="18293000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="814" height="867" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.168435" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08161954" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -230,7 +229,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32833788" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32970026" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3257066" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
