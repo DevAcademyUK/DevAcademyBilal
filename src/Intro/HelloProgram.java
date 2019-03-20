@@ -19,7 +19,6 @@ public class HelloProgram {
             String name = myScanner.nextLine();
             System.out.println("Hello, My Name is JJJ" + name);
 
-            //
         //Scanner myObj = new Scanner(System.in);  // Create a Scanner object
        // System.out.println("Enter username");
 
