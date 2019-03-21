@@ -13,7 +13,7 @@ public class createAnimal {
     }
 
 
-        private void getAnimalType () {
+        public void getAnimalType () {
 
             System.out.println("What animal would you like to create?");
             String animal = myscanner.nextLine();
@@ -34,7 +34,7 @@ public class createAnimal {
 
         }
 
-    private void createDog() {
+    public void createDog() {
 
         System.out.println("What is the dog name?");
         String name = myscanner.nextLine();
@@ -45,19 +45,17 @@ public class createAnimal {
         System.out.println("What is the breed of the  dog?");
         String breed = myscanner.nextLine();
 
+       dog myDog = new dog(name, size, age, breed);
 
-
-        dog myDog = new dog(name, size, age, breed);
-
-        myDog.bark(size);
-        myDog.play (breed);
-        myDog.behuman (name, age, breed);
+        System.out.println(myDog.bark(size));
+        System.out.println(myDog.play (breed));
+        myDog.behuman (name, breed, age);
 
 
 
     }
 
-    private void createCat(){
+    public void createCat(){
 
       System.out.println("What is the name of Your Cat?");
       String  name = myscanner.nextLine();
@@ -71,7 +69,7 @@ public class createAnimal {
       cat myCat = new cat(name, age, color);
 
       myCat.watching(color);
-      myCat.CATS(name, age, color);
+      myCat.CATS(name, color, age);
 
 
 

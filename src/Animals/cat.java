@@ -17,7 +17,7 @@ public class cat {
         this.color = color;
     }
 
-    private String watching (String color){
+    public String watching (String color){
         String watch = " ";
         if (color.equalsIgnoreCase("green")){
             watch = " Wow look green Cat " ;
@@ -34,7 +34,7 @@ public class cat {
     }
 
 
-    private String CATS ( String name, String color, int age ) {
+    public String CATS ( String name, String color, int age ) {
         return  " Hello Alien " + name + " and I am " + age + " years old cat. My fur color is " + color + "!";
 
     }
