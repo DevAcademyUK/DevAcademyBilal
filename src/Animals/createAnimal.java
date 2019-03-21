@@ -49,7 +49,7 @@ public class createAnimal {
 
         System.out.println(myDog.bark(size));
         System.out.println(myDog.play (breed));
-        myDog.behuman (name, breed, age);
+        System.out.println(myDog.behuman (name, breed, age));
 
 
 
@@ -63,13 +63,13 @@ public class createAnimal {
       System.out.println("WHat color is the  Cat?");
       String color = myscanner.nextLine();
 
-      System.out.println("How old is that cat?");
+      System.out.println("How old is the cat?");
       int age = myscanner.nextInt();
 
       cat myCat = new cat(name, age, color);
 
-      myCat.watching(color);
-      myCat.CATS(name, color, age);
+      System.out.println(myCat.watching(color));
+      System.out.println(myCat.CATS(name, color, age));
 
 
 
