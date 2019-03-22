@@ -26,31 +26,31 @@ public class PersonalAccount {
 
 
 
-        if (account.equalsIgnoreCase("Deposit")) {
-            PAccount += depositAmount;
-        }
-        else if (account.equalsIgnoreCase("Withdraw")){
-            if (withDrawAmount <= PAccount) {
-                PAccount -= withDrawAmount;
+      //  if (account.equalsIgnoreCase("Deposit")) {
+         //   PAccount += depositAmount;
+       // }
+      // else if (account.equalsIgnoreCase("Withdraw")){
+           //if (withDrawAmount <= PAccount) {
+             //   PAccount -= withDrawAmount;
             }
 
-        else if (account.equalsIgnoreCase("Balance")){
-            System.out.println("Your Current Balance is:  " + PAccount);;
+      // else if (account.equalsIgnoreCase("Balance")){
+        //    System.out.println("Your Current Balance is:  " + PAccount);;
 
-        } else {
-            System.out.println("Error: Invalid Information provided");
-        }
-
-
-
-        }
+     //   } else {
+      //      System.out.println("Error: Invalid Information provided");
+     //   }
 
 
 
-    }
-
+    //    }
 
 
 
     }
+
+
+
+
+ //  }
 
