@@ -3,6 +3,7 @@ package Animals;
 import java.util.Scanner;
 
 public class createAnimal {
+
     Scanner myscanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -11,7 +12,6 @@ public class createAnimal {
 
 
     }
-
 
         public void getAnimalType () {
 
