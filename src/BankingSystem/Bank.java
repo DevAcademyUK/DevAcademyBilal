@@ -7,6 +7,7 @@ public class Bank {
 
     private String userName = "Bilal";
     private String password = "zxcvbnm";
+    protected String personalAccountBalance;
 
 
     Scanner myscanner = new Scanner(System.in);
@@ -38,45 +39,40 @@ public class Bank {
     }
 
     public void selectAction(String input ) {
-        switch (input){
-            case "PAccount":
-                PAccount();
-                break;
-            case "SHAccount":
-                SHAccount();
-                break;
-            case "SVAccount":
-                SVAccount();
+        switch (input) {
+
+            case "deposit":
+          //      deposit();
                 break;
 
-           // case "logout":
-             //   logout();
-             //   break;
+            case "balance":
+           //     checkBalance();
+                break;
 
-                default:
+            case "withdraw":
+             //   withdraw();
+                break;
+
+
+             case "logout":
+             //  logout();
+               break;
+
+            default:
 
                 System.out.println(" Error: Incorrect input received");
                 System.out.println("Please enter any of the following:");
                 System.out.println("PAccount - Access Personal Account");
+
                 System.out.println("SHAccount - Access Shared Account");
                 System.out.println("SVAccount - Access Savings Account");
-               // System.out.println("Logout - sign out of your account");
+                // System.out.println("Logout - sign out of your account");
                 Main();
+                PersonalAccount pa = new PersonalAccount();
+                personalAccountBalance = pa.deposits("150", personalAccountBalance);
+
 
         }
-    }
-
-    public void SVAccount() {
-    }
-
-    public void SHAccount() {
-
-    }
-
-    public void PAccount() {
-
-
-
     }
 
 
