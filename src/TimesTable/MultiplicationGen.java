@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MultiplicationGen {
 
-    Scanner myscanner = new Scanner(System.in);
+    Scanner myscanner = new Scanner(System.in); // myscanner = instance variable
 
     public static void main (String [] args) {
         MultiplicationGen  multiplesTable = new MultiplicationGen();
