@@ -12,8 +12,14 @@ public class BankingProject {
         //char Cha = myScanner.next().charAt(0);
         //System.out.println("Value =  " + Cha);
 
-        BankAccount  BankProject = new BankAccount( "Bill", "67890"); // will invoke the BankAccount Constructor
-        BankProject.Menu();
+        BankAccount  SharedAccount = new BankAccount( "Bill", "67890"); // will invoke the BankAccount Constructor
+        BankAccount  SavingsAccount = new BankAccount("Jim", "87469" );
+        BankAccount  CurrentAccount = new BankAccount("Dan", "89076");
+
+
+        SharedAccount.Menu();
+        SavingsAccount.Menu();
+        CurrentAccount.Menu();
 
     }
 
