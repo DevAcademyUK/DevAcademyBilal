@@ -5,14 +5,13 @@ import java.util.Scanner;
 public class Bank {
 
 
-    private String userName = "Bilal";
+     String userName = "Bilal";
     private String password = "zxcvbnm";
-   ///protected String personalAccountBalance;
+    protected String personalAccountBalance;
 
     private double CurrentAccountB;
     private double JoinedAccountB;
     private double SharedccountB;
-
 
 
     Scanner myscanner = new Scanner(System.in);
@@ -44,7 +43,7 @@ public class Bank {
     }
 
     private void getAction(String input) {
-        switch(input){
+        switch (input) {
 
             case "deposit":
                 deposit();
@@ -59,7 +58,7 @@ public class Bank {
                 break;
 
             case "logout":
-              //  logout();
+                //  logout();
                 break;
             default:
 
@@ -69,7 +68,7 @@ public class Bank {
 
                 System.out.println("SHAccount - Access Shared Account");
                 System.out.println("SVAccount - Access Savings Account");
-                 System.out.println("Logout - sign out of your account");
+                System.out.println("Logout - sign out of your account");
                 Main();
 
         }
@@ -83,55 +82,44 @@ public class Bank {
         System.out.println("How much is the amount of Your Deposit ");
         short depositAmount = Short.parseShort(myscanner.nextLine());
 
-        if(account.equalsIgnoreCase("CurrentAccount")) {
+        if (account.equalsIgnoreCase("CurrentAccount")) {
             CurrentAccountB += depositAmount;
             System.out.println("Your Deposit Has been Completed");
-        }
-        else if(account.equalsIgnoreCase("JointAccount")) {
+        } else if (account.equalsIgnoreCase("JointAccount")) {
             JoinedAccountB += depositAmount;
             System.out.println("Your Deposit Has been Completed");
-        }
-        else if(account.equalsIgnoreCase("SavingsAccount")) {
+        } else if (account.equalsIgnoreCase("SavingsAccount")) {
             SharedccountB += depositAmount;
             System.out.println("Your Deposit Has been Completed");
-        }
-        else {
+        } else {
             System.out.println("Error : Invalid Information provided");
         }
     }
 
-    private void withdraw (){
+    private void withdraw() {
 
         System.out.println("Which account would you liek to use to Withdraw your Money From?");
         String WithdrawwAccount = myscanner.nextLine();
         System.out.println("How much would you like to Withdraw?");
         short withDrawAmount = Short.parseShort(myscanner.nextLine());
 
-        if (WithdrawwAccount.equalsIgnoreCase("Current Account: ")){
-            if (withDrawAmount <= CurrentAccountB){
+        if (WithdrawwAccount.equalsIgnoreCase("Current Account: ")) {
+            if (withDrawAmount <= CurrentAccountB) {
                 CurrentAccountB -= withDrawAmount;
                 System.out.println("Withdraw Enquiry Completed");
-            }
-            else
+            } else
                 System.out.println("Error: Insufficient Funds");
-        }
-
-        else if (WithdrawwAccount.equalsIgnoreCase("Joint Account ")){
+        } else if (WithdrawwAccount.equalsIgnoreCase("Joint Account ")) {
             if (withDrawAmount <= JoinedAccountB) {
                 JoinedAccountB -= withDrawAmount;
                 System.out.println("Withdraw Enquiry Completed");
-            }
-
-            else
+            } else
                 System.out.println("Error: Insufficient Funds");
-        }
-        else if (WithdrawwAccount.equalsIgnoreCase("Savings  Account ")){
+        } else if (WithdrawwAccount.equalsIgnoreCase("Savings  Account ")) {
             if (withDrawAmount <= JoinedAccountB) {
                 JoinedAccountB -= withDrawAmount;
                 System.out.println("Withdraw Enquiry Completed");
-            }
-
-            else
+            } else
                 System.out.println("Error: Insufficient Funds");
         }
         Main();
@@ -150,13 +138,11 @@ public class Bank {
         } else if (BalanceAccount.equalsIgnoreCase("JointAccount")) {
             System.out.println("Current Account Balance is:  " + JoinedAccountB);
             System.out.println("Balance Enquiry Completed");
-        } else if (BalanceAccount.equalsIgnoreCase("Savings")){
+        } else if (BalanceAccount.equalsIgnoreCase("Savings")) {
             System.out.println("Current Account Balance is:  " + SharedccountB);
             System.out.println("Balance Enquiry Completed");
         }
     }
-
-
 
 
     private boolean autentication(String usernameEntered, String passwordenter) {
@@ -165,5 +151,5 @@ public class Bank {
         }
         return false;
     }
-
 }
+

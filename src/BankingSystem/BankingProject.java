@@ -87,6 +87,8 @@ public class BankingProject {
 
             switch (Option) {
                 case 'A' :
+                    System.out.println("Welcome " + CustomerName); // initialize through our constructor
+                    System.out.println("PLease Type Your ID" + CustomerID);
                     System.out.println("Enter Amount to Deposit: ");
                     int amount = myScanner.nextInt();
                     deposit(amount);
